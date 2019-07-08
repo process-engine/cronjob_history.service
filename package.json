@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://www.npmjs.com"
   },
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Contains the service layer for the cronjob_history API.",
   "license": "MIT",
   "main": "dist/commonjs/index.js",
