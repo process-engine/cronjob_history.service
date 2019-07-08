@@ -1,0 +1,38 @@
+{
+  "name": "@process-engine/cronjob_history.service",
+  "publishConfig": {
+    "registry": "https://www.npmjs.com"
+  },
+  "version": "0.0.1",
+  "description": "Contains the service layer for the cronjob_history API.",
+  "license": "MIT",
+  "main": "dist/commonjs/index.js",
+  "typings": "dist/index.d.ts",
+  "author": "5Minds IT-Solutions GmbH & Co. KG",
+  "maintainers": [
+    "Alexander Kasten <alexander.kasten@5minds.de>",
+    "Christian Werner <christian.werner@5minds.de>",
+    "René Föhring <rene.foehring@5minds.de>",
+    "Steffen Knaup <steffen.knaup@5minds.de>"
+  ],
+  "dependencies": {
+    "@essential-projects/iam_contracts": "^3.4.1"
+  },
+  "devDependencies": {
+    "@essential-projects/eslint-config": "^1.0.0",
+    "@types/node": "^10.12.10",
+    "eslint": "^5.16.0",
+    "tsconfig": "^7.0.0",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && npm run build-commonjs && npm run build-amd",
+    "build-commonjs": "tsc",
+    "build-amd": "tsc --module amd --outDir ./dist/amd",
+    "prepare": "npm run build",
+    "lint": "eslint src/**/*.ts src/*.ts",
+    "lint-fix": "eslint --fix src/**/*.ts src/*.ts",
+    "test": ":"
+  }
+}
