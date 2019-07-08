@@ -16,7 +16,8 @@
     "Steffen Knaup <steffen.knaup@5minds.de>"
   ],
   "dependencies": {
-    "@essential-projects/iam_contracts": "^3.4.1"
+    "@essential-projects/iam_contracts": "^3.4.1",
+    "@process-engine/cronjob_history.contracts": "feature~initial_implementation"
   },
   "devDependencies": {
     "@essential-projects/eslint-config": "^1.0.0",
