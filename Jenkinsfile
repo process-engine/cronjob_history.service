@@ -40,13 +40,13 @@ pipeline {
      stage('lint') {
       steps {
         sh('node --version')
-        sh('npm run lint || true')
+        sh('npm run lint')
       }
     }
     stage('build') {
       steps {
         sh('node --version')
-        sh('npm run build || true')
+        sh('npm run build')
       }
     }
     stage('test') {
