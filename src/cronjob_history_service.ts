@@ -39,7 +39,7 @@ export class CronjobHistoryService implements ICronjobHistoryService {
   public async getByCrontab(identity: IIdentity, crontab: string): Promise<Array<Cronjob>> {
     await this.ensureUserHasClaim(identity, canReadCronjobHistoryClaim);
 
-    return this.cronjobHistoryRepository.getByProcessModelId(crontab);
+    return this.cronjobHistoryRepository.getByCrontab(crontab);
   }
 
   private async ensureUserHasClaim(identity: IIdentity, claimName: string): Promise<void> {
