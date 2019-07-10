@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://www.npmjs.com"
   },
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Contains the service layer for the cronjob_history API.",
   "license": "MIT",
   "main": "dist/commonjs/index.js",
@@ -16,7 +16,8 @@
     "Steffen Knaup <steffen.knaup@5minds.de>"
   ],
   "dependencies": {
-    "@essential-projects/iam_contracts": "^3.4.1"
+    "@essential-projects/iam_contracts": "^3.4.1",
+    "@process-engine/cronjob_history.contracts": "^1.0.0"
   },
   "devDependencies": {
     "@essential-projects/eslint-config": "^1.0.0",
