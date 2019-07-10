@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "@essential-projects/iam_contracts": "^3.4.1",
-    "@process-engine/cronjob_history.contracts": "1.0.0-218e9991-b5"
+    "@process-engine/cronjob_history.contracts": "^1.0.0"
   },
   "devDependencies": {
     "@essential-projects/eslint-config": "^1.0.0",
