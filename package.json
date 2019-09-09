@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "@essential-projects/iam_contracts": "^3.4.1",
-    "@process-engine/cronjob_history.contracts": "^1.0.0"
+    "@process-engine/cronjob_history.contracts": "feature~add_limit_and_offset_to_list_queries"
   },
   "devDependencies": {
     "@essential-projects/eslint-config": "^1.0.0",
