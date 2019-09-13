@@ -24,22 +24,28 @@ export class CronjobHistoryService implements ICronjobHistoryService {
     return this.cronjobHistoryRepository.create(cronjob);
   }
 
-  public async getAll(identity: IIdentity): Promise<Array<Cronjob>> {
+  public async getAll(identity: IIdentity, offset: number = 0, limit: number = 0): Promise<Array<Cronjob>> {
     await this.ensureUserHasClaim(identity, canReadCronjobHistoryClaim);
 
-    return this.cronjobHistoryRepository.getAll();
+    return this.cronjobHistoryRepository.getAll(offset, limit);
   }
 
-  public async getByProcessModelId(identity: IIdentity, processModelId: string, startEventId?: string): Promise<Array<Cronjob>> {
+  public async getByProcessModelId(
+    identity: IIdentity,
+    processModelId: string,
+    startEventId?: string,
+    offset: number = 0,
+    limit: number = 0,
+  ): Promise<Array<Cronjob>> {
     await this.ensureUserHasClaim(identity, canReadCronjobHistoryClaim);
 
-    return this.cronjobHistoryRepository.getByProcessModelId(processModelId, startEventId);
+    return this.cronjobHistoryRepository.getByProcessModelId(processModelId, startEventId, offset, limit);
   }
 
-  public async getByCrontab(identity: IIdentity, crontab: string): Promise<Array<Cronjob>> {
+  public async getByCrontab(identity: IIdentity, crontab: string, offset: number = 0, limit: number = 0): Promise<Array<Cronjob>> {
     await this.ensureUserHasClaim(identity, canReadCronjobHistoryClaim);
 
-    return this.cronjobHistoryRepository.getByCrontab(crontab);
+    return this.cronjobHistoryRepository.getByCrontab(crontab, offset, limit);
   }
 
   private async ensureUserHasClaim(identity: IIdentity, claimName: string): Promise<void> {
