@@ -22,7 +22,7 @@
   "homepage": "https://github.com/process-engine/cronjob_history.service#readme",
   "dependencies": {
     "@essential-projects/iam_contracts": "^3.4.1",
-    "@process-engine/cronjob_history.contracts": "feature~add_limit_and_offset_to_list_queries"
+    "@process-engine/cronjob_history.contracts": "1.1.0-b5e4a478-b7"
   },
   "devDependencies": {
     "@essential-projects/eslint-config": "^1.0.0",
