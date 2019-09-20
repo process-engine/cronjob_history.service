@@ -1,6 +1,6 @@
 {
   "name": "@process-engine/cronjob_history.service",
-  "version": "1.1.0",
+  "version": "1.1.0-beta.1",
   "description": "Contains the service layer for the cronjob_history API.",
   "main": "dist/commonjs/index.js",
   "typings": "dist/index.d.ts",
